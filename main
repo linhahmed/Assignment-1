@@ -1,0 +1,64 @@
+import java.util.*;
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i,j;
+		System.out.println("Enter the universe set" );
+		 Scanner scan=new Scanner(System.in);
+		 String u =scan.nextLine();
+		 String[] ua = u.split(","); 
+		 Arrays.sort(ua);
+	     for (String a : ua) 
+	            System.out.println(a);
+	  
+	
+	    	 System.out.println("Enter the first subset elements" );
+	    	 String A =scan.nextLine();
+			 String[] Aa = A.split(","); 
+			 Arrays.sort(Aa);
+		     for (String a : Aa) 
+		            System.out.println(a);
+		     System.out.println("Enter the second subset elements" );
+	    	 String B =scan.nextLine();
+			 String[] Ba = B.split(","); 
+			 Arrays.sort(Ba);
+		     for (String a : Ba) 
+		            System.out.println(a);
+		     String[] arr1=new String[ua.length];
+		     String[] arr2=new String[ua.length];
+		    
+		     for (i=0;i<Aa.length;i++) {
+		    	 for (j=0;j<ua.length;j++) {
+		    		 if (Aa[i].equals(ua[j])) {
+		    			 arr1[j]=Aa[i];
+		    			 break;
+		    		 }
+		    			 
+		    	 }
+		   
+		     }
+		     for (i=0;i<Ba.length;i++) {
+		    	 for (j=0;j<ua.length;j++) {
+		    		 if (Ba[i].equals(ua[j])) {
+		    			 arr2[j]=Ba[i];
+		    			 break;
+		    		 }
+		    			 
+		    	 }
+		   
+		     }
+		    
+		    
+		   
+	    	 
+	    	 
+	    
+	      
+
+	     
+		 
+
+	}
+
+}
